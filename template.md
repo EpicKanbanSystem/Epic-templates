@@ -1,66 +1,135 @@
-# Epic Issue Form – Specification (SAFe)
+# Short Name of Epic
 
-This document describes the **GitHub Epic Issue Form** used by the Epic Kanban System.
+> **Note:** The concept of an Epic here is an adaptation of an Epic within the Scale Agile Framework (SAFe).
 
-> ⚠️ **This is the review and discussion version**
->
-> The live, executable form is maintained in:
-> `.github/ISSUE_TEMPLATE/epic.yml`
+## Overview
 
-To propose changes:
-1. Open a Pull Request modifying this file
-2. Discuss changes using GitHub review comments
-3. Maintainers will synchronise agreed changes into `epic.yml`
+* **Definition:** An Epic refers to a perceived large scientific software need/idea that will advance aspects of ISIS.
+* **Threshold:** Consider "large" to mean a need with an initial estimate requiring the effort of at least one person for a quarter of a year or more (≥ 0.25 FTY) to complete all features in scope.
+* **Process:** To start an Epic, the minimum required information is a Funnel Entry Date, a title, and an initial Epic Description.
+* **Support:** If you are not a member of the scientific software group, please notify your contact within the group or contact Janu (januka.wijesinghe-ekanayaka@stfc.ac.uk) or Anders (anders.markvardsen@stfc.ac.uk) for early feedback.
 
 ---
 
-## Design Principles
+## 1. Epic Metadata
 
-- Minimise friction for early funnel entry
-- Encourage benefit-driven thinking
-- Align with SAFe Portfolio Epics
-- Be usable by non-software scientists
-- Avoid YAML exposure to contributors
-
----
-
-## Epic Overview
-
-**Purpose:**  
-Capture large scientific software needs (≥ 0.25 FTY) suitable for Portfolio Kanban.
+| Field | Description | Input |
+| :--- | :--- | :--- |
+| **Funnel Entry Date** | Date started | `[YYYY-MM-DD]` |
+| **Epic Owner** | The key individual driving the Epic (usually provides requirements/represents users). | `[Name]` |
+| **Key Stakeholders** | Relevant stakeholders (scientists, user groups, project managers). | `[Names]` |
 
 ---
 
-## Fields
+## 2. Epic Description
 
-### Funnel Entry Date
-**Type:** Required  
-**Format:** `YYYY-MM-DD`  
-**Rationale:** Enables portfolio flow tracking.
+*(Suggest initiating the writing in the "For, Who..." format below. If unsure if this is a Business or Enabler Epic, specify why.)*
+
+* **For:** `<users and/or groups of users>`
+* **Who:** `<do something, such as a certain type of experiment>`
+* **The:** `<scientific software solution/tool/framework/algorithm/service>`
+* **Is a:** `<short description of what it is>`
+* **That:** `<provides this value>`
+* **Unlike:** `<competitor, current solution, or non-existing solution>`
+* **Our solution:** `<does something better>`
+
+**Type of Epic:**
+* [ ] **Business Epic:** Provides new functionality to external users and ISIS staff.
+* [ ] **Enabler Epic:** Enables or improves the ease of creating future Business Epics (e.g., architecture, infrastructure).
+
+**Downside Analysis (Optional):**
+* *Is there a significant downside if this problem is not solved?*
 
 ---
 
-### Epic Owner
-**Type:** Required  
-**Rationale:** Single accountable owner for requirements and validation.
+## 3. Value & Metrics
+
+### Measurable ISIS Benefits
+*(Measurable benefits anticipated if the Epic hypothesis is proven true. E.g., "Improve accuracy of data process X by Y%". How does ISIS benefit as an organization?)*
+
+* `[Enter benefits here]`
+
+### Leading Indicators
+*(Metrics checked during implementation to track progress. E.g., "Time to run workflow X on hardware Z". Note: Some Epics may strictly rely on MVP completion for feedback.)*
+
+* `[Enter indicators here]`
 
 ---
 
-### Key Stakeholders
-**Type:** Optional  
-**Rationale:** Identifies affected groups and decision-makers.
+## 4. Scope Definition
+
+### Features in Scope
+*(Full list of features needed to deliver the Epic, including MVP)*
+
+* `[Feature 1]`
+* `[Feature 2]`
+
+**Out of Scope:**
+* `[Clarify exclusions/assumptions]`
+
+### Features in the Minimum Viable Product (MVP)
+*(The minimum 'experiment' to demonstrate required benefits. See: Making sense of MVP - Crisp's Blog)*
+
+* `[MVP Feature 1]`
+* `[MVP Feature 2]`
 
 ---
 
-### Epic Description
-**Type:** Required  
-**Format:** For / Who / What / Why
+## 5. Requirements & Constraints
 
-```text
-For <users or groups>
-who <do something>
-the <software / tool / service>
-is a <short description>
-that <provides value>
-unlike <current solution>
-our solution <does something better>
+### Nonfunctional Requirements (NFRs)
+*(Performance, usability, maintainability, scalability, security, etc.)*
+
+* `[Enter NFRs]`
+
+### Environmental Sustainability
+*(CPU/memory usage, energy consumption, hardware needs. Does this impact instrument operations?)*
+
+* `[Enter details]`
+
+### External Commitments
+*(E.g., Commissioning date of a new instrument or technique)*
+
+* `[Enter dates/deadlines]`
+
+---
+
+## 6. Forecasted Costs
+
+### Estimated Full Implementation (In Scope)
+*(Estimated cost of Features in Scope + MVP)*
+
+**Select Estimate Range (FTY = Full Time Year):**
+* [ ] 0.2 - 0.6 FTY
+* [ ] 1 - 2 FTY
+* [ ] 2.5 - 4 FTY
+* [ ] 5 - 8 FTY
+* [ ] 10 - 15 FTY
+* [ ] 20+ FTY
+
+**Detailed Breakdown:**
+* **Development Estimate:** `[Value]`
+* **Scientist(s) Estimate:** `[Value]` *(If > 0.1 FTY)*
+* **Skills Required:** `[List skills]`
+
+### Estimated MVP Cost
+**Select Estimate Range:**
+* [ ] `[Select from ranges above]`
+
+**Detailed Breakdown:**
+* **MVP Dev Estimate:** `[Value]`
+* **Scientist(s) Estimate:** `[Value]`
+* **Skills Required for MVP:** `[E.g., Mantid, C++, Python]`
+
+---
+
+## 7. Additional Supporting Data
+
+**Attachments:**
+*(Links to resources, architecture diagrams, specs)*
+
+* `[Link 1]`
+* `[Link 2]`
+
+---
+*Epic template version 2.2 (Jan 2025)*

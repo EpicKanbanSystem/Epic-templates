@@ -1,0 +1,28 @@
+name: Convert Markdown to Word
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '**.md'
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install Pandoc
+        run: sudo apt-get update && sudo apt-get install -y pandoc
+
+      - name: Convert Template to Word
+        run: |
+          pandoc template-without-comments.md \
+            --reference-doc="Epic template.docx" \
+            -o Epic-Template-Generated.docx
+
+      - name: Upload Word Document
+        uses: actions/upload-artifact@v4
+        with:
+          name: converted-word-templates
+          path: Epic-Template-Generated.docx

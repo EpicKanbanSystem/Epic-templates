@@ -40,7 +40,7 @@ This repository uses a **GitHub Action** to keep the Word and Markdown versions 
 ---
 
 ## 👥 Contributors & Contact
-* **ISIS Neutron and Muon Source** - *Portfolio Management & Scientific Computing*
+* **ISIS Neutron and Muon Source**
 * **Maintainers:** [EpicKanbanSystem Team]
 
 ---

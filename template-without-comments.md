@@ -131,7 +131,7 @@ status: Active
 ## 7. Additional Supporting Data
 
 **Attachments:**
-*(Links to resources, architecture diagrams, specs etc)*
+*(Links to resources, architecture diagrams, specs)*
 
 * `[Link 1]`
 * `[Link 2]`

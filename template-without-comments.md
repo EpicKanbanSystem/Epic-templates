@@ -63,20 +63,16 @@ status: Active
 
 ## 4. Scope Definition
 
-### Features in Scope
-*(Full list of features needed to deliver the Epic, including MVP)*
-
-* `[Feature 1]`
-* `[Feature 2]`
-
-**Out of Scope:**
-* `[Clarify exclusions/assumptions]`
-
-### Features in the Minimum Viable Product (MVP)
-*(The minimum 'experiment' to demonstrate required benefits. See: Making sense of MVP - Crisp's Blog)*
-
-* `[MVP Feature 1]`
-* `[MVP Feature 2]`
+| Full Scope (Total Implementation) | MVP Scope (Minimum Viable Product) |
+| :--- | :--- |
+| **Features in Scope:** | **Features in MVP:** |
+| *Full list of features needed to deliver the Epic.* | *Minimum 'experiment' to demonstrate benefits.* |
+| * `[Feature 1]` | * `[MVP Feature 1]` |
+| * `[Feature 2]` | * `[MVP Feature 2]` |
+| * `[Feature 3]` | * `[MVP Feature 3]` |
+| | |
+| **Out of Scope / Exclusions:** | **Success Criteria:** |
+| * `[Clarify exclusions/assumptions]` | * `[How we know the MVP worked]`
 
 ---
 
@@ -101,30 +97,20 @@ status: Active
 
 ## 6. Forecasted Costs
 
-### Estimated Full Implementation (In Scope)
-*(Estimated cost of Features in Scope + MVP)*
-
-**Select Estimate Range (FTY = Full Time Year):**
-* [ ] 0.2 - 0.6 FTY
-* [ ] 1 - 2 FTY
-* [ ] 2.5 - 4 FTY
-* [ ] 5 - 8 FTY
-* [ ] 10 - 15 FTY
-* [ ] 20+ FTY
-
-**Detailed Breakdown:**
-* **Development Estimate:** `[Value]`
-* **Scientist(s) Estimate:** `[Value]` *(If > 0.1 FTY)*
-* **Skills Required:** `[List skills]`
-
-### Estimated MVP Cost
-**Select Estimate Range:**
-* [ ] `[Select from ranges above]`
-
-**Detailed Breakdown:**
-* **MVP Dev Estimate:** `[Value]`
-* **Scientist(s) Estimate:** `[Value]`
-* **Skills Required for MVP:** `[E.g., Mantid, C++, Python]`
+| Full Implementation (In Scope) | MVP Cost (Experiment) |
+| :--- | :--- |
+| **Select Estimate Range (FTY):** | **Select Estimate Range (FTY):** |
+| [ ] 0.2 - 0.6 FTY | [ ] 0.2 - 0.6 FTY |
+| [ ] 1 - 2 FTY | [ ] 1 - 2 FTY |
+| [ ] 2.5 - 4 FTY | [ ] 2.5 - 4 FTY |
+| [ ] 5 - 8 FTY | [ ] 5 - 8 FTY |
+| [ ] 10 - 15 FTY | [ ] 10 - 15 FTY |
+| [ ] 20+ FTY | [ ] 20+ FTY |
+| | |
+| **Detailed Breakdown:** | **Detailed Breakdown:** |
+| **Dev Estimate:** `[Value]` | **MVP Dev Estimate:** `[Value]` |
+| **Scientist Estimate:** `[Value]` | **Scientist Estimate:** `[Value]` |
+| **Skills:** `[List all skills required]` | **Skills:** `[E.g., Mantid, C++, Python]` |
 
 ---
 

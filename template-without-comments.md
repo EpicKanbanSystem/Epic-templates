@@ -3,7 +3,7 @@ Title: Epic Template without comments
 version: 2.2
 status: Active
 ---
-# LONG Name of Epic
+# Name of Epic
 
 > **Note:** The concept of an Epic here is an adaptation of an Epic within the Scale Agile Framework (SAFe).
 

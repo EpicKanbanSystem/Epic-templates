@@ -1,4 +1,5 @@
 name: Convert Markdown to Word
+
 on:
   push:
     branches: [ main ]
@@ -7,7 +8,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write  # Allows the bot to save files back to your repo
+  contents: write
 
 jobs:
   convert:
@@ -15,9 +16,14 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          # Fetch all history so git can rebase properly if needed
+          fetch-depth: 0
 
       - name: Install Pandoc
-        run: sudo apt-get update && sudo apt-get install -y pandoc
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc
 
       - name: Convert Template to Word
         run: |
@@ -26,9 +32,11 @@ jobs:
             -o "Epic Template Auto Gen.docx"
 
       - name: Commit and Push Word File
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add "Epic Template Auto Gen.docx"
-          # Only commit if the file actually changed to avoid errors
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-generated Word document" && git push)
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Auto-generated Word document"
+          file_pattern: '"Epic Template Auto Gen.docx"'
+          # This ensures that if the remote changed, 
+          # it will pull those changes first.
+          push_options: '--force' 
+          skip_dirty_check: false

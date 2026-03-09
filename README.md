@@ -7,7 +7,7 @@
 ---
 
 ## 📖 Project Overview
-This repository contains the official **Epic Template** used to capture and define high-level initiatives and software requirements. Originally adapted from the **Scaled Agile Framework (SAFe)**, this template is specifically refined to meet the unique scientific and technical needs of the **ISIS Neutron and Muon Source**.
+This repository contains the **Epic Template** used to capture and define high-level initiatives and software requirements. Originally adapted from the **Scaled Agile Framework (SAFe)**, this template is ongoingly refined to meet the scientific and technical needs of the **ISIS Neutron and Muon Source**.
 
 ### 🔗 Part of the Epic Kanban System
 This project is designed to work in tandem with our workflow definitions:
@@ -19,7 +19,7 @@ This project is designed to work in tandem with our workflow definitions:
 * **Scientific Alignment:** Dedicated sections for scientific impact, methodology, and research context.
 * **Agile Integration:** Seamlessly maps to SAFe Portfolio and Program levels.
 * **Automated Word Export:** Powered by GitHub Actions and Pandoc. Any change to the Markdown template automatically generates a polished `.docx` file for stakeholder distribution.
-* **Consistency:** Ensures all large-scale software projects within the facility follow the same rigorous documentation standard.
+* **Consistency:** Ensures software projects that use the template follow the same way of documentating large software needs.
 
 ---
 

@@ -1,0 +1,88 @@
+name: Epic (for testing with LENS WP4)
+description: Propose a large scientific software Epic (≥ 0.25 FTY)
+title: "[Epic]: "
+labels:
+  - epic
+  - funnel
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Epic Overview
+        Use this form to propose a **large scientific software Epic** (≥ 0.25 FTY).
+        This form was setup for a trial with LENS (League of European Neutron
+        Sources) Work-Package 4. It includes a subset of the fields of the adaptation done at the
+        ISIS facility that combined the two SAFe templates into one targeting scientific software,
+        specifically version 2.2 Jan 2025 of this.
+
+  - type: input
+    id: funnel_entry_date
+    attributes:
+      label: Funnel Entry Date
+      placeholder: YYYY-MM-DD
+    validations:
+      required: true
+
+  - type: input
+    id: epic_owner
+    attributes:
+      label: Epic Owner
+      description: Person best positioned to provide requirements and represent users
+
+  - type: textarea
+    id: stakeholders
+    attributes:
+      label: Key Stakeholders
+      description: Scientists, user groups, project or product managers
+
+  - type: textarea
+    id: epic_description
+    attributes:
+      label: Epic Description
+      description: For / Who / What / Why
+      placeholder: |
+        For <users or groups>
+        who <do something>
+        the <software / tool / service>
+        is a <short description>
+        that <provides value>
+        unlike <current solution>
+        our solution <does something better>
+
+  - type: dropdown
+    id: epic_type
+    attributes:
+      label: Type of Epic
+      options:
+        - Business Epic
+        - Enabler Epic
+
+  - type: textarea
+    id: measurable_benefits
+    attributes:
+      label: Measurable Benefits
+      description: Quantitative or qualitative benefits to research facility
+
+  - type: textarea
+    id: features_in_scope
+    attributes:
+      label: Features in Scope
+
+  - type: textarea
+    id: mvp_description
+    attributes:
+      label: MVP Description
+      description: Smallest experiment that demonstrates the benefit
+
+  - type: dropdown
+    id: full_cost_range
+    attributes:
+      label: Estimated Full Implementation Cost (FTY)
+      options:
+        - 0.2–0.6 FTY
+        - 1–2 FTY
+        - 2.5–4 FTY
+        - 5–8 FTY
+        - 10–15 FTY
+        - 20+ FTY

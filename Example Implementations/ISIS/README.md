@@ -1,0 +1,1 @@
+* **Epic template v2-2.docx**: This version and its predesesors have been used extensively across multiple software contexts at the ISIS Neutron and Muon Source. Copies of versions of this templates have using within internal Jira setups, i.e. when creating Epics with Jira copy of this Word template would appear.

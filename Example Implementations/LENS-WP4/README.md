@@ -1,0 +1,1 @@
+* **epic.yml**: Github issue template file. To use with your repo copy into folder repo/.github/ISSUE_TEMPLATE/ . Used with testing Epic Kanban System setup with LENS WP4.

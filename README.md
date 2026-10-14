@@ -4,5 +4,4 @@ This repository contains the **Epic Template** used to capture and define high-l
 combining the two commercial focussed SAFe templates into one 
 customised for scientific facilities.
 
-This repo is designed to work in tandem with the repo
-* **[Kanban-system-templates](https://github.com/EpicKanbanSystem/Kanban-system-templates)**. Combined they define an Epic Kanban System.
+This repo is designed to work in tandem with the repo **[Kanban-system-templates](https://github.com/EpicKanbanSystem/Kanban-system-templates)**. Combined they define an Epic Kanban System.
